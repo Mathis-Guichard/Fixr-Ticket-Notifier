@@ -3,6 +3,7 @@
   "name": "Fixr Tickets Sold Notifier",
   "version": "1.0",
   "description": "Plays a sound when the 'Tickets sold' tag increases.",
+  "author": "Mathis GUICHARD",
   "permissions": [
     "activeTab",
     "storage"
