@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Fixr Tickets Sold Notifier",
+  "version": "1.0",
+  "description": "Plays a sound when the 'Tickets sold' tag increases.",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://reps.fixr.co/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    "sound.mp3"
+  ]
+}
