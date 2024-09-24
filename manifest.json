@@ -3,9 +3,17 @@
   "name": "Fixr Ticket Notifier",
   "version": "1.0",
   "description": "Plays a sound when the 'Tickets sold' tag increases on Fixr dashboard.",
-  "author": "Mathis GUICHARD",
   "icons": {
-    "128": "icon-128.png"
+    "48": "icon.png"
+  },
+  "developer": {
+    "name": "Mathis GUICHARD",
+    "url": "https://mathis-guichard.fr"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{55bd9cff-a2fc-4ec5-8369-5de0add51688}"
+    }
   },
   "content_scripts": [
     {
