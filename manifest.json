@@ -1,20 +1,23 @@
 {
-  "manifest_version": 2,
-  "name": "Fixr Tickets Sold Notifier",
+  "manifest_version": 3,
+  "name": "Fixr Ticket Notifier",
   "version": "1.0",
-  "description": "Plays a sound when the 'Tickets sold' tag increases.",
+  "description": "Plays a sound when the 'Tickets sold' tag increases on Fixr dashboard.",
   "author": "Mathis GUICHARD",
-  "permissions": [
-    "activeTab",
-    "storage"
-  ],
+  "icons": {
+    "128": "icon-128.png"
+  },
   "content_scripts": [
     {
-      "matches": ["https://reps.fixr.co/*"],
-      "js": ["content.js"]
+      "matches": ["*://*.fixr.co/*"],
+      "js": ["content-script.js"]
     }
   ],
+  "permissions": ["activeTab"],
   "web_accessible_resources": [
-    "sound.mp3"
+    {
+      "resources": ["sound/notification.mp3"],
+      "matches": ["*://*.fixr.co/*"]
+    }
   ]
 }
